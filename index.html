@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Memory Game</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <ul class="paws">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+<header class="header">
+
+   <div class="start">
+      <div class="modal">
+         <div class="start-modal-title"><h1 class="title">Memory Game</h1></div>
+         <button class="modal-start">Start New Game</button>
+      </div>
+   </div>
+</header>
+
+   <div class="modal-container">
+      <div class="modal">
+         <div class="modal-title"><h2>Congratulations! You win!</h2></div>
+         <div class="modal-moves">
+            <div class="moves">You did it in  <span class="score">0</span> moves</div>
+         </div>
+         <div class="modal-score">
+            <h3 class="modal-score-title">Your Previous Games Results</h3>
+            <ul class="modal-scores-table"></ul>
+         </div>
+         <button class="modal-restart">New Game</button>
+      </div>
+   </div>
+   <main class="main">
+      <section class="game-container">
+         <div class="card" data-name="bear">
+            <div class="front"><img src="./assets/bear.svg" alt="bear"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="bear">
+            <div class="front"><img src="./assets/bear.svg" alt="bear"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="cat">
+            <div class="front"><img src="./assets/cat.svg" alt="cat"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="cat">
+            <div class="front"><img src="./assets/cat.svg" alt="cat"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div> 
+         </div>
+         <div class="card" data-name="dog">
+            <div class="front"><img src="./assets/dog.svg" alt="dog"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="dog">
+            <div class="front"><img src="./assets/dog.svg" alt="dog"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="fox">
+            <div class="front"><img src="./assets/fox.svg" alt="fox"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="fox">
+            <div class="front"><img src="./assets/fox.svg" alt="fox"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="lion">
+            <div class="front"><img src="./assets/lion.svg" alt="lion"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="lion">
+            <div class="front"><img src="./assets/lion.svg" alt="lion"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="monkey">
+            <div class="front"><img src="./assets/monkey.svg" alt="monkey"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="monkey">
+            <div class="front"><img src="./assets/monkey.svg" alt="monkey"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="owl">
+            <div class="front"><img src="./assets/owl.svg" alt="owl"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="owl">
+            <div class="front"><img src="./assets/owl.svg" alt="owl"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="panda">
+            <div class="front"><img src="./assets/panda.svg" alt="panda"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="panda">
+            <div class="front"><img src="./assets/panda.svg" alt="panda"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="pig">
+            <div class="front"><img src="./assets/pig.svg" alt="pig"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="pig">
+            <div class="front"><img src="./assets/pig.svg" alt="pig"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="rabbit">
+            <div class="front"><img src="./assets/rabbit.svg" alt="rabbit"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+         <div class="card" data-name="rabbit">
+            <div class="front"><img src="./assets/rabbit.svg" alt="rabbit"></div>
+            <div class="back"><img src="./assets/card-back.svg" alt="card"></div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__columns">
+         <div class="footer__copyright">
+            <ul>
+               <li>&copy;</li>
+               <li>2022</li>
+               <li><a href="https://github.com/Jkhvatova">github</a></li>
+            </ul>
+         </div>
+         <a href="https://rs.school/js-stage0/"><div class="footer__school-link"><span class="footer__school-link"></span></div></a>
+      </div>
+   </footer>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
